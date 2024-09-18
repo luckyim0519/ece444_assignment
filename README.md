@@ -12,6 +12,11 @@ a screenshot
 
 ### Activity 2
 two screenshots (repo and the deployed website)  
+https://luckyim0519.github.io
+
+<img width="1027" alt="image" src="https://github.com/user-attachments/assets/62c9543a-159e-4ad6-8745-5ea0e8c0a6f0">
+
+
 
 ### Activity 3
 two screenshots (repo and the deployed website)  
