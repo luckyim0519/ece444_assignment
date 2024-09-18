@@ -7,6 +7,8 @@ https://github.com/varadbhogayata/varadbhogayata.github.io
 
 ### Activity 1
 a screenshot 
+<img width="988" alt="image" src="https://github.com/user-attachments/assets/2d356831-c061-4496-872d-55f709687996">
+
 
 ### Activity 2
 two screenshots (repo and the deployed website)  
