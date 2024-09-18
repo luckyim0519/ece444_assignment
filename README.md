@@ -32,7 +32,8 @@ preview of the website
 
 
 ### Activity 4
-two screenshots (repo and the “places travelled” page in deployed website)
+<img width="1063" alt="image" src="https://github.com/user-attachments/assets/0717344c-3f13-42d8-98fd-c4b9ee50d3df">
+
 
 ### Activity 5
 a screenshot of top three projects 
