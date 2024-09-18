@@ -21,6 +21,8 @@ https://luckyim0519.github.io
 
 ### Activity 3
 two screenshots (repo and the deployed website)  
+<img width="1062" alt="image" src="https://github.com/user-attachments/assets/17067b4b-f4c9-4f8c-b0e5-9c25b914eca8">
+
 
 ### Activity 4
 two screenshots (repo and the “places travelled” page in deployed website)
