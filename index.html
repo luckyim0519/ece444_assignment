@@ -771,15 +771,35 @@ improved performance by 20% through cache optimization using algorithms and data
         tools: ["React", "Firebase"],
         details: "Led and developed a web application simulating an interactive in-person classroom and serving as a centralized hub for all course content, fostering enhanced student participation in online classrooms. Built using React with JavaScript and Firebase for user registration and log-in.",
         repoUrl: "https://github.com/luckyim0519?tab=repositories"
+      },
+      {
+        title: "Project 4",
+        image: "/assets/img/project4.png",
+        description: "Project Description 4",
+        tools: ["Tool1", "Tool2"],
+        details: "Details about Project 4.",
+        repoUrl: "https://github.com/luckyim0519/project4"
+      },
+      {
+        title: "Project 5",
+        image: "/assets/img/project5.png",
+        description: "Project Description 5",
+        tools: ["Tool1", "Tool2"],
+        details: "Details about Project 5.",
+        repoUrl: "https://github.com/luckyim0519/project5"
       }
       // Add more projects as needed
     ];
 
-    // Function to render projects
-    function renderProjects() {
-      const container = document.getElementById('projects-container');
+    let currentIndex = 0; // Track the current index for projects to display
+    const projectsToShow = 3; // Number of projects to show initially
 
-      projects.forEach(project => {
+    // Function to render a subset of projects
+    function renderProjects(startIndex, endIndex) {
+      const container = document.getElementById('projects-container');
+      const projectsSubset = projects.slice(startIndex, endIndex);
+
+      projectsSubset.forEach(project => {
         // Create card elements
         const cardDiv = document.createElement('div');
         cardDiv.className = 'col s12 m6 l4';
@@ -858,9 +878,21 @@ improved performance by 20% through cache optimization using algorithms and data
     }
 
     // Initial load of projects
-    renderProjects();
+    renderProjects(currentIndex, projectsToShow);
+
+    // Handle Load More button click
+    document.getElementById('load-more').addEventListener('click', function() {
+      currentIndex += projectsToShow;
+      if (currentIndex < projects.length) {
+        renderProjects(currentIndex, currentIndex + projectsToShow);
+      } else {
+        // If no more projects to show, hide the button
+        this.style.display = 'none';
+      }
+    });
   });
 </script>
+
 
 
 </body>
