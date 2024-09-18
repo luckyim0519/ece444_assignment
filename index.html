@@ -524,7 +524,7 @@ improved performance by 20% through cache optimization using algorithms and data
           -->
         
             <button id="load-more" class="btn-large waves-effect waves-light teal">Load More</button>
-          
+          </div>
         </div>
       </div>
     </section>
@@ -819,10 +819,10 @@ improved performance by 20% through cache optimization using algorithms and data
 
   // Initial rendering
   // Load More button functionality
-document.getElementById('load-more').addEventListener('click', () => {
-    renderProjects(currentIndex, currentIndex + projectsPerPage);
-    currentIndex += projectsPerPage;
-});
+  document.getElementById('load-more').addEventListener('click', () => {
+      renderProjects(currentIndex, currentIndex + projectsPerPage);
+      currentIndex += projectsPerPage;
+  });
 
 </script>
 
