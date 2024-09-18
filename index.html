@@ -354,25 +354,18 @@ improved performance by 20% through cache optimization using algorithms and data
 
     <!-- Fourth Section: Projects -->
 
-    <h3 class="page-title white-text teal">Projects</h3>
-    <div class="container">
-      <div id="projects-container" class="row recent-projects">
-        <!-- Project cards will be dynamically inserted here -->
-      </div>
-      <button id="load-more" class="btn-large waves-effect waves-light teal">Load More</button>
-    </div>
-    <!--
+
     <section id="projects" class="section scrollspy">
       <h3 class="page-title white-text teal">Projects</h3>
       <div class="container">
         <div class="row">
           <div class ="recent-projects">
-            
-            
+          
+            <!-- static projects -->
             <div class="col s12 m6 l4">
               <div class="card medium">
                 <div class="card-image waves-effect waves-block waves-light">
-                  <img alt="music streaming app" src="/assets/img/msft-logo.jpg" style="height: 100%; width: 100%" class="activator" />
+                  <img alt="ai trip planner" src="/assets/img/msft-logo.jpg" style="height: 100%; width: 100%" class="activator" />
                 </div>
                 <div class="card-content">
                   <span class="card-title activator teal-text hoverline">Microsoft Hackathon<i class="mdi-navigation-more-vert right"></i></span>
@@ -381,8 +374,6 @@ improved performance by 20% through cache optimization using algorithms and data
                   </p>
                 </div>
                 <div class="card-reveal">
-                 
-                
                   <span class="card-title grey-text"><small>Accomplishments</small><i
                       class="mdi-navigation-close right"></i></span>
                   <ul>
@@ -465,7 +456,7 @@ improved performance by 20% through cache optimization using algorithms and data
               </div>
             </div>
 
-            
+            <!-- dynamic projects             
             <div class="col s12 m6 l4">
               <div class="card medium">
                 <div class="card-image waves-effect waves-block waves-light">
@@ -530,13 +521,15 @@ improved performance by 20% through cache optimization using algorithms and data
                 </div>
               </div>
             </div>
+          -->
+        
             <button id="load-more" class="btn-large waves-effect waves-light teal">Load More</button>
-          </div> 
-
+          
         </div>
       </div>
     </section>
-   -->
+    
+   
     <!-- Fifth Section: Skills -->
     <section id="skills" class="section scrollspy">
       <h3 class="page-title white-text teal">Skills</h3>
@@ -784,7 +777,7 @@ improved performance by 20% through cache optimization using algorithms and data
 
     ];
 
-  let currentIndex = 0;
+  let currentIndex = 3;
   const projectsPerPage = 3;
 
   function renderProjects(startIndex, endIndex) {
@@ -825,7 +818,11 @@ improved performance by 20% through cache optimization using algorithms and data
   }
 
   // Initial rendering
-  renderProjects(currentIndex, currentIndex + projectsPerPage);
+  // Load More button functionality
+document.getElementById('load-more').addEventListener('click', () => {
+    renderProjects(currentIndex, currentIndex + projectsPerPage);
+    currentIndex += projectsPerPage;
+});
 
 </script>
 
