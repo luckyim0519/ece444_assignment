@@ -775,7 +775,6 @@ improved performance by 20% through cache optimization using algorithms and data
     ];
 
   let currentIndex = 3;
-  const projectsPerPage = 3;
 
   function renderProjects(startIndex, endIndex) {
       const container = document.querySelector('.recent-projects');
@@ -818,7 +817,7 @@ improved performance by 20% through cache optimization using algorithms and data
   // Load More button functionality
   document.getElementById('load-more').addEventListener('click', () => {
     console.log("")
-      renderProjects(currentIndex, currentIndex + projectsPerPage);
+      renderProjects(currentIndex, currentIndex + 4);
       currentIndex += projectsPerPage;
   });
 
