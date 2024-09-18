@@ -140,7 +140,7 @@ body {
 } */
 
 a {
-  color: rgba(179, 27, 245, 0.4);
+  color: rgba(83, 8, 115, 0.4);
 }
 
 /* main blockqoute */
@@ -320,7 +320,7 @@ h3 {
 } */
 
 #intro.section {
-  background: #a7ffeb repeat;
+  background: #db12b3 repeat;
   position: relative;
 }
 
@@ -367,7 +367,7 @@ h3 {
 .waves-effect.waves-blue .waves-ripple {
   /* The alpha value allows the text and background color
    of the button to still show through. */
-  background-color: rgba(33, 150, 243, 0.2);
+  background-color: rgba(126, 18, 126, 0.553);
 }
 
 .card {
