@@ -38,5 +38,7 @@ preview of the website
 
 
 ### Activity 5
-a screenshot of top three projects 
+<img width="1303" alt="image" src="https://github.com/user-attachments/assets/24d4c4e0-ae0f-4de7-a672-48f7c5ab9433">
+<img width="1069" alt="image" src="https://github.com/user-attachments/assets/2fcdfab4-769a-4e37-aff0-a6a9b71516b0">
+
 
